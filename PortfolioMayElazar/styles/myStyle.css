@@ -1,0 +1,694 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Varela+Round');
+
+
+
+
+body {
+    direction: rtl;
+    background-color: #b9dcd2;
+    background-image: url('../images/goldScatterCircel.gif');
+}
+
+#container * {
+    font-family: 'Varela Round', sans-serif;
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*---------------------------HOME PAGE----------------------*/
+
+
+#hello {
+    font-size: 100pt;
+}
+
+#myName
+{
+    font-size: 50pt;
+    line-height: 82px;
+}
+
+#newfont
+{
+    font-size: 50pt;
+    font-family: cursive;
+   
+}
+
+#newfont1 {
+    font-size: 50pt;
+    font-family: cursive;
+}
+
+#student {
+    font-size: 33pt;
+}
+
+
+
+/*------------------------------- תפריט ניווט ראשי-------------------*/
+
+header
+{
+    background-color: #2f2f33;
+    height: 108px;
+}
+
+nav ul 
+{
+    list-style: none;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    float: right;
+}
+
+    nav ul li a 
+    {
+        display: block;
+        background-color: #2f2f33;
+        color: #BA9E4B;
+        text-decoration: none;
+        text-align: center;
+        width: 220px;
+        height: 55px;
+        Padding-top: 38px;
+        font-size: 25pt;
+        padding-bottom: 16px;
+    }
+
+dropDown menu1 a
+{
+    text-align:center;
+}
+
+nav ul li a:hover {
+    background-color: #f2827f;
+    color: black;
+}
+
+nav ul li a:active 
+{
+   background-color: #f2827f;
+}
+
+
+nav ul li ul 
+{
+    display: none;
+    position:absolute;
+ }
+
+
+    nav ul li:hover > ul {
+        display: block;
+        width: 120px;
+        animation: dropdownLoads 1s;
+    }
+
+/*for the dropDown menu to stay in place*/
+ul 
+{
+    z-index: 99;
+    height: auto
+}
+
+
+.currentPage {
+    background-color:#dfc370;
+    color:black;
+}
+
+
+/*animate for the menu*/
+@keyframes dropdownLoads {
+    0% {
+        transform: translateX(25px) rotate(-30deg);
+    }
+
+    100% {
+        opacity: 10;
+        transform: translate(0px) rotate(0deg)
+    }
+}
+
+
+
+
+.dropDown menu1 li:first-child {
+    animation-delay: 0;
+}
+
+.dropDown menu1 li:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.dropDown menu1 li:last-child {
+    animation-delay: 3s;
+}
+
+/*------------------sparkles on the background----------*/
+ #sparklesUp
+ {
+    margin-top: 13px;
+}
+
+#sparklesDown
+{
+    transform: rotate(180deg);
+    margin-top: -894px;
+}
+
+
+
+
+/*---------------explalin what i do-----------------*/
+
+#wahtIdo
+{
+    
+    
+    height: 1214px;
+    margin: 0;
+    padding: 30px;
+    background-repeat: no-repeat;
+}
+
+#aboutMe {
+    padding-top: 28px;
+    text-align: center;
+    color: #707070;
+    text-shadow: 1px 1px #8f8d8b;
+}
+
+
+.myNameLogo {
+    
+    float: left;
+    height: 50%;
+    text-align: right;
+    padding: 22px;
+    direction: ltr;
+    width: 18px;
+    padding-bottom: 14px;
+}
+
+    .myNameLogo h1 {
+        font-size: 30pt;
+    }
+    .myNameLogo a {
+        color: #BA9E4B;
+        text-decoration-line: none;
+    }
+
+#arrow 
+{
+    height: 89px;
+    width: auto;
+    padding: 98px;
+    animation: bounceArrow 1s infinite;
+    position: relative;
+}
+
+/*arrow object animate*/
+
+@keyframes bounceArrow {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+/*Bottum home page slides */
+
+
+
+
+#myprojects {
+    font-size: 50pt;
+    text-align: center;
+    position: relative;
+    color: #707070;
+}
+
+    #myprojects::before {
+        content: "";
+        display: block;
+        width: 521px;
+        height: 2px;
+        position: absolute;
+        background-color: #D5F0E8;
+        left: 0;
+        top: 50%;
+        z-index: -2;
+    }
+
+    #myprojects::after {
+        content: "";
+        display: block;
+        width: 521px;
+        height: 2px;
+        position: absolute;
+        background-color: #D5F0E8;
+        right: 0;
+        top: 50%;
+        z-index: -2;
+    }
+
+    figcaption span {
+        background-color: #b9dcd2;
+    }
+
+    
+
+
+
+
+
+#animation_container 
+{
+    margin-right: 33%;
+    margin-top: 5%;
+
+}
+
+
+#animetedstars
+{
+    position:absolute
+}
+
+#starsLogo
+{
+    height: auto;
+    width: 150px;
+    margin-left: 33px;
+    margin-top: -184px;
+    animation-name: stars;
+    animation-duration: 10s;
+    padding: 0px;
+    transform: rotate(30deg);
+}
+
+
+/*object animate*/
+
+@keyframes stars 
+{
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(390deg);
+    }
+}
+}
+
+/*------------footr----------------*/
+
+
+#mailIcon 
+{
+    height: 20px;
+    width: 20px;
+    margin-left: 10PX;
+}
+
+#whatsAppIcon
+{
+    height: 20px;
+    width: 20px;
+    margin-left: 10PX;
+}
+
+#contectInfo p
+{
+    margin-right: 10px;
+    display: inline;
+    text-align: center;
+    display: inline-flex;
+    color: #BA9E4B;
+    text-decoration:none;
+    margin-top:10px;
+}
+
+    #contectInfo p a {
+        color: #BA9E4B;
+        text-decoration: none;
+        margin-right: 35px;
+        margin-top: 26px;
+    }
+
+
+    #footerBackground {
+        background-color: #2f2f33;
+        color: black;
+        height: 86px;
+        padding: 10px;
+    }
+
+#rights
+{
+    margin-right: 55px;
+    margin-top: 22px;
+}
+
+/*I moved the footer down in the poster page*/
+
+#footerBackgroundPoster
+{
+    background-color: #2f2f33;
+    color: black;
+    height: 86px;
+    padding: 10px;
+    margin-top: 796px;
+}
+
+/*moving footer down in the portrait page*/
+
+#footerBackgroundPortriet {
+    margin-top: 400px;
+    background-color: #2f2f33;
+    color: black;
+    height: 86px;
+    padding: 10px;
+    
+}
+
+/*moving footer down in the parshanot le yezirat omanot page*/
+
+#footerBackgroundVanGogh 
+{
+    margin-top: 1430px;
+    background-color: #2f2f33;
+    color: black;
+    height: 86px;
+    padding: 10px;
+}
+
+
+
+
+
+/*----------------------New page - 50 years poster to HIT-------------------------------*/
+
+#projectName
+{
+    font-size: 90pt;
+    text-align: center;
+    color: #707070;
+    text-shadow: 1px 1px #8f8d8b;
+    margin-top: 86px;
+    padding-bottom: 84px;
+    font-family: Calibri;
+}
+
+.aboutPoster {
+    text-align: center;
+    color: #55534d;
+    font-size: 20pt;
+    padding-top: 45px;
+    LINE-HEIGHT: 41px;
+}
+
+/*about the project background and animtion*/
+
+#aboutProjectBg {
+    background-color: #fff;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 844px;
+    padding: 21px;
+    border: 5px pink;
+    border-width: 7px;
+    border-radius: 3px;
+    border-style: outset;
+    transition: width 0.5s linear 0s;
+}
+
+    #aboutProjectBg:hover 
+    {
+        width: 900px;
+        border-style: ridge;
+    }
+
+
+    #myPoster {
+        background-image: url(../images/spritePoster.png);
+        width: 727px;
+        height: 1012px;
+        background-position: 10px 0px;
+        margin-right: 10%;
+        margin-top: 72px;
+    }
+
+    #myPoster:hover
+    {
+        background-position: bottom center;
+        width: 727px;
+        height: 1050px;
+        margin-top:30px;
+    }
+
+#hoverPosterArrow 
+{
+    width: 234px;
+    text-align: center;
+    font-size: 20pt;
+    margin-right: -186px;
+    margin-top: -1006px;
+    transform: rotate(16deg);
+}
+
+    #hoverPosterArrow p
+    {
+        
+        width: 234px;
+        text-align: center;
+        font-size: 20pt;
+        margin-right: -58px;
+        margin-top: 153px;
+        
+    }
+
+    #hoverPosterArrow img
+    {
+        height: 226px;
+        margin-right: -60px;
+        margin-top: 75px;
+        transform: rotate(1deg);
+    }
+
+#sound 
+{
+    margin-top: 477px;
+    margin-right: 302px;
+}
+
+
+
+/*------------------Self Portrit Page-----------------*/
+
+
+#portreit p 
+{
+    padding: 27px;
+
+}
+
+
+#objectFirstStep 
+{
+    margin-right: -523px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+#objectFirstStep p
+{
+    line-height:18pt;
+}
+
+.magnifier {
+    height: 244px;
+    width: auto;
+}
+
+#objectSecoundStep 
+{
+    margin-right: -523px;
+    text-align: center;
+}
+
+    #objectSecoundStep p
+    {
+        line-height: 18pt;
+    }
+
+#objectfinelStep
+{
+    margin-right: 509px;
+    margin-top: -809px;
+    text-align: center;
+}
+    #objectfinelStep p
+    {
+        line-height: 18pt;
+    }
+
+
+#magnifier3
+{
+    height:665PX;
+}
+
+#audioPortriet
+{
+    margin-right: 543px;
+    margin-top: -93px;
+    margin-bottom: 73px;
+}
+}
+
+audio:hover, audio:focus, audio:active {
+    -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+#musicArrow
+{
+    height: 170px;
+    margin-top: 50px;
+    margin-right: 284px;
+    transform: rotate(32deg);
+}
+
+#goodMusic p 
+{
+    margin-top: 17px;
+    font-size: 20pt;
+    transform: rotate(19deg)
+}
+
+#goodMusic
+{
+margin-top:-48px;
+}
+
+
+/*---------------van gogh page פרשנות ליצירת אומנות--------------------*/
+
+#org {
+    height:280px;
+}
+
+#orgConteiner
+{
+    padding:10px;
+    margin-top:326px;
+}
+
+
+#ourpic{
+    height:538px;
+}
+
+#ourConteiner 
+{
+    margin-right: 632px;
+    margin-top: -431px;
+}
+
+#ourvideo 
+{
+    height: 370px;
+}
+
+#videoConteiner 
+{
+    margin-right: 13%;
+    margin-top: 101px;
+}
+
+    #videoConteiner p 
+    {
+        padding: 18px;
+        text-align: center;
+        font-size: 30pt;
+        margin-right: -125px;
+    }
+
+#ourConteiner h3 
+{
+    padding: 18px;
+    text-align: center;
+    font-size: 30pt;
+    margin-left: -177px;
+}
+
+#orgConteiner h3 {
+    padding: 18px;
+    text-align: center;
+    font-size: 30pt;
+    margin-left: 278px;
+}
+
+#aboutOurPic
+{
+    text-align: center;
+    padding: 5px;
+    padding-top: 105px;
+    line-height:88px;
+    
+}
+
+
+    #aboutOurPic h3 {
+        font-size:36pt;
+    }
+
+    #aboutOurPic p 
+    {
+        font-size: 23pt;
+    }
+
+    #myWork {
+        margin-top: -261px;
+    }
+
+/*------------------About me page----------------*/
+
+#telem 
+{
+    font-size: 35pt;
+    text-align: center;
+    position: relative;
+    color: #707070;
+    margin: 85px;
+}
+
+#telemVideo
+{
+    margin-right:155px;
+}
+
